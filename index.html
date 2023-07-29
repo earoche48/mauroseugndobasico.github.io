@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuestionario de Cifras Significativas y Vectores</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 10px;
+    }
+
+    h1, h2, p {
+        margin: 10px 0;
+    }
+     p {
+        margin: 10px 0;
+    }
+
+    form {
+        margin: 10px 0;
+    }
+
+    form p {
+        margin: 0;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    input[type="button"] {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #FFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Ajustar el tamaño de los elementos en pantallas pequeñas */
+    @media screen and (max-width: 480px) {
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        form p {
+            font-size: 14px;
+        }
+
+        input[type="button"] {
+            font-size: 14px;
+        }
+    }
+    h1 {
+              font-size: 24px;
+              margin-left: 10px;
+          }
+  
+          img {
+              height: 64px;
+              width: 64px;
+              vertical-align: middle;
+          }
+</style>
+<body>
+    
+
+    <h1><img src="Logo.png" alt="Logo"> Colegio Cristiano Peniel</h1><br>
+    <body>
+        <h1>Formulario de preguntas</h1>
+        <form id="quizForm" onsubmit="return validateQuiz()">
+          <ol>
+            <li>
+              <label for="q1">1. ¿La circunferencia o perímetro de una tapadera circular de 10 cms de diámetro es?</label><br>
+              <input type="radio" name="q1" value="A">A) 31 cms<br>
+              <input type="radio" name="q1" value="B">B) 31.416 cms<br>
+              <input type="radio" name="q1" value="C">C) 32.416 cms<br>
+              <input type="radio" name="q1" value="D">D) NINGUNA<br>
+            </li>
+            <li>
+              <label for="q2">2. ¿El área de un círculo de 5 Plg de radio es?</label><br>
+              <input type="radio" name="q2" value="A">A) 24.78 plg^2<br>
+              <input type="radio" name="q2" value="B">B) 87.24 Plg^2<br>
+              <input type="radio" name="q2" value="C">C) 78.24 Plg^2<br>
+              <input type="radio" name="q2" value="D">D) NINGUNA<br>
+            </li>
+            <li>
+              <label for="q3">3. ¿Cuál es el área de un triángulo que tiene un lado a=4 cms y en el lado b=3?</label><br>
+              <input type="radio" name="q3" value="A">A) 6 cms^2<br>
+              <input type="radio" name="q3" value="B">B) 12 cms^2<br>
+              <input type="radio" name="q3" value="C">C) 7 cms^2<br>
+              <input type="radio" name="q3" value="D">D) NINGUNA<br>
+            </li>
+            <li>
+              <label for="q4">4. ¿Cuál es el volumen de un cilindro que tiene un radio de 2 cms y una altura de 8 cms?</label><br>
+              <input type="radio" name="q4" value="A">A) 10 cms^3<br>
+              <input type="radio" name="q4" value="B">B) 100.899 cms^3<br>
+              <input type="radio" name="q4" value="C">C) 16 cms^3<br>
+              <input type="radio" name="q4" value="D">D) 100.53144 cms^3<br>
+            </li>
+            <li>
+              <label for="q5">5. ¿Cuál es el volumen de un cubo que tiene un lado de longitud 5 cms?</label><br>
+              <input type="radio" name="q5" value="A">A) 5 cms^3<br>
+              <input type="radio" name="q5" value="B">B) 25 cms^3<br>
+              <input type="radio" name="q5" value="C">C) 125 cms^3<br>
+              <input type="radio" name="q5" value="D">D) NINGUNA<br>
+            </li>
+            <li>
+              <label for="q6">6. ¿Cuál es el volumen de un cono que tiene un diámetro de 12 Plg y una altura de 9 Plg?</label><br>
+              <input type="radio" name="q6" value="A">A) 21 Plg^3<br>
+              <input type="radio" name="q6" value="B">B) 339.29 Plg^3<br>
+              <input type="radio" name="q6" value="C">C) 15 Plg^3<br>
+              <input type="radio" name="q6" value="D">D) NINGUNA<br>
+            </li>
+            <li>
+              <label for="q7">7. ¿Cuál es el volumen de una esfera que tiene un radio de 10 cms?</label><br>
+              <input type="radio" name="q7" value="A">A) 4188.79 cms^3<br>
+              <input type="radio" name="q7" value="B">B) 1000 cms^3<br>
+              <input type="radio" name="q7" value="C">C) 10 cms^3<br>
+              <input type="radio" name="q7" value="D">D) NINGUNA<br>
+            </li>
+            <li>
+              <label for="q8">8. ¿Cuál es el resultado de cubicar un macetero que tiene 10 Plg de longitud, 8 Plg de profundidad y 6 Plg de ancho?</label><br>
+              <input type="radio" name="q8" value="A">A) 24 Plg^3<br>
+              <input type="radio" name="q8" value="B">B) 48 Plg^3<br>
+              <input type="radio" name="q8" value="C">C) 480 Plg^3<br>
+              <input type="radio" name="q8" value="D">D) NINGUNA<br>
+            </li>
+            <li>
+              <label for="q9">9. ¿Cuál es el resultado de operar 4+8:2-4?</label><br>
+              <input type="radio" name="q9" value="A">A) 2<br>
+              <input type="radio" name="q9" value="B">B) 4<br>
+              <input type="radio" name="q9" value="C">C) -4<br>
+              <input type="radio" name="q9" value="D">D) 18<br>
+            </li>
+            <li>
+              <label for="q10">10. ¿Pedro recibió un regalo de Q.1,200?00 y luego el papá le regala un cheque de Q.20 0 en quetzales y posteriormente realiza una compra de Q.200.00 cuanto le quedó en efectivo a Pedro?</label><br>
+              <input type="radio" name="q10" value="A">A) Q.1,420.00<br>
+              <input type="radio" name="q10" value="B">B) Q.1,020<br>
+              <input type="radio" name="q10" value="C">C) Q.1,001.00<br>
+              <input type="radio" name="q10" value="D">D) NINGUNA<br>
+            </li>
+          </ol>
+          <input type="submit" value="Enviar respuestas">
+        </form>
+      
+        <script>
+          function validateQuiz() {
+            // Respuestas correctas
+            const correctAnswers = {
+              q1: 'B',
+              q2: 'A',
+              q3: 'A',
+              q4: 'B',
+              q5: 'B',
+              q6: 'B',
+              q7: 'A',
+              q8: 'B',
+              q9: 'A',
+              q10: 'B',
+            };
+      
+            // Obtener respuestas seleccionadas por el usuario
+            const form = document.getElementById('quizForm');
+            const formData = new FormData(form);
+            let userAnswers = {};
+            formData.forEach((value, key) => {
+              userAnswers[key] = value;
+            });
+      
+            // Validar respuestas
+            let score = 0;
+            for (const question in correctAnswers) {
+              if (userAnswers[question] === correctAnswers[question]) {
+                score+= 3;
+              }
+            }
+      
+            // Mostrar resultados
+            alert(`¡Has obtenido ${score} respuestas correctas de 30!`);
+            window.location.href = "contraseña_2.html";
+          }
+
+           // Verificar si el examen ya ha sido completado previamente y redirigir a contraseña_2.html
+if (localStorage.getItem("formCompleted")) {
+showFinalScore();
+}
+// Verificar si el examen ya se ha completado
+const isExamCompleted = localStorage.getItem('formCompleted') === 'true';
+const isFormLocked = localStorage.getItem('formAbandoned') === 'true';
+// Bloquear la página si el examen no se ha completado
+if (!isExamCompleted && isFormLocked) {
+alert('Esta página se bloque debeido a que usted se salio del formulario, conslute al docente si desea continuar.');
+window.location.href = 'contrasena.html';
+}
+
+// Redirigir a contraseña.html si se abandona el examen o se cambia de página
+window.addEventListener("beforeunload", (event) => {
+                if (!examCompleted) {
+                    localStorage.setItem("formAbandoned", true);
+                    event.preventDefault();
+                    
+                }
+            });
+
+             // Detectar cambios de visibilidad en la página
+             document.addEventListener("visibilitychange", () => {
+                if (document.visibilityState === "hidden") {
+                    examCompleted = true;
+                    localStorage.setItem("formAbandoned", true);
+                    window.location.href = "contrasena.html";
+                }
+            });
+        </script>
+      </body>
+    </script>
+</body>
+</html>
